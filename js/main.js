@@ -32,8 +32,36 @@ var d = new Date();
 console.log(d);
 */
 
+/*
 function soma(n1, n2){
     return n1 + n2;
 }
 
 console.log(soma(13, 7));
+*/
+
+function load(){
+    console.log("Página carregada");
+}
+
+function button_onclick(){
+    //alert("Obrigado por clicar");
+    document.getElementById("agradecimento").innerHTML="Obrigado por clicar"
+}
+
+function agradecimento_onclick(){
+    window.open("https://www.globo.com");
+    //window.location.href = "https://www.globo.com";
+}
+
+function trocar(elemento){
+    elemento.innerHTML="Obrigado por passar o mouse";
+}
+
+function voltar(elemento){
+    elemento.innerHTML="Passe o mouse aqui";
+}
+
+function select_onchange(elemento){
+    console.log(elemento.value);
+}
